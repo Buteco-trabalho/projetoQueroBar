@@ -45,6 +45,8 @@ footer {
     background-color: #C4C4C44D;
     border-top: solid 2px #C4C4C44D;
     width: 100%;
+    position: absolute;
+    bottom: 0px;
 }
 section{
     max-width: 100%;
