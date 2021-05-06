@@ -1,0 +1,63 @@
+body{
+    background: linear-gradient(168.51deg, #B10598 2.1%, #D01E4A 47.66%, #FF7800 98.81%);
+    font-family: Voltaire;
+}
+.logo{
+    text-align: center;
+}
+.cadastre-se .row {
+    margin-top: 20px;
+    text-align: center;
+}
+.cadastre-se .row input {
+    width: 300px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.45));
+    height: 38.16px;
+    border: none;
+    border-radius: 5px;
+}
+.buttons .row{
+    margin-top: 20px;
+    text-align: center;
+}
+#cadastre-se {
+    width: 300px;
+    height: 69.2px;
+    color: #ffff;
+}
+#conecte-se {
+    text-align: center;
+    width: 300px;
+    height: 69.2px;
+    border: 1px solid #6c757d;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+#conecte-se p {
+    margin-top: 20px;
+}
+.link {
+    justify-content: center;
+    display: flex;
+}
+footer img {
+    width: 160px;
+    height: auto;
+}
+#google {
+    height: auto;
+}
+footer {
+    display: flex;
+    background-color: #C4C4C44D;
+    border-top: solid 2px #C4C4C44D;
+    width: 100%;
+    margin-bottom: 0px !important;
+    padding-bottom: 40px;
+}
+footer p {
+    font-size: 18px;
+    margin-top: 10px;
+}
