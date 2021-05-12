@@ -1,0 +1,45 @@
+body {
+    overflow-x: hidden;
+}
+.centro {
+    display: flex;
+    justify-content: center;
+}
+.mainbutton {
+    min-width: 300px !important; 
+}
+
+.login {
+    margin-top: 10px;
+    margin-left: 55px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+.butao{
+    max-width: 300px;
+    border-radius: 10px;
+    color: black;
+    font-size: 20px;
+    border: none;
+    background: linear-gradient(168.51deg, #B10598 2.1%, #D01E4A 47.66%, #FF7800 98.81%), #DF6C07;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+.sobre {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+.titulo {
+    margin-top: 10px;
+}
+/* carousel */

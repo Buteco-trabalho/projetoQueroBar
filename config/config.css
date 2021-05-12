@@ -1,0 +1,60 @@
+.cabecalho{
+    background: linear-gradient(168.51deg, #B10598 2.1%, #D01E4A 47.66%, #FF7800 98.81%), #DF6C07;
+    text-align: center;
+}
+.barra_nav{
+    background-color: #FF8921;
+}
+.bi-arrow-left{
+    margin-top: 5px;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    color: black;
+    text-decoration: none;
+}
+.titulo{
+    font-size: 25px;
+    text-align: center;
+}
+.opcao{
+    margin-top: 30px;
+    padding: 10px;
+}
+.bi-globe2{
+    margin-top: 4px;
+}
+.fundo{
+    border-left: 5px solid black;
+    text-align: center;
+    width: 380px;
+    margin-top: 40px;
+    padding-top: 15px;
+    height: 548px;
+    background: linear-gradient(168.51deg, #B10598 2.1%, #D01E4A 47.66%, #FF7800 98.81%), #DF6C07;
+}
+.icone{
+    padding: 2px;
+    padding-top: 2px;
+}
+.texto{
+    text-align: center;
+    font-size: 30px;
+    padding-right: 50px;
+}
+.linha{
+    border-bottom: 1px solid rgb(73, 73, 73);
+    padding: 20px;
+}
+.butao{
+    margin-top: 50px;
+    border: 1px solid black !important;
+    width: 75%;
+    cursor: pointer;
+}
+.posicao{
+    text-align: center;
+}
