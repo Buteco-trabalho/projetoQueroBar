@@ -22,37 +22,42 @@
             </div>
         </section>
         <section class="container cadastre-se">
+            <form method="POST" id="form-reg">
             <div class="row">
                 <div class="col-12 Nome">
-                    <input type="text" name="Nome Completo" id="name" placeholder="Nome Completo">
+                    <input type="text" name="Name" data-letters id="Name" placeholder="Nome" data-min-length="2" data-required>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 ">
-                    <input type="email" name="emaildecadastro" id="emailornumber"
-                        placeholder="Email ou Numero de Telefone">
+                    <input required type="email" name="formadecadastro" id="emailornumber"
+                       data-required placeholder="Email ou Numero de Telefone" data-emailornumber-validate>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
-                    <input type="password" name="password" id="password" placeholder="Senha">
+                    <input type="password" name="Senha" id="password" placeholder="Senha" data-min-length="5" data-required data-password-validate>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
-                    <input type="password" name="password" id="password" placeholder="Confirmar Senha">
+                    <input type="password" name="passwordc" id="passwordc" placeholder="Confirmar Senha" data-required data-equal="Senha">
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 idade">
-                    <p>Data de Nascimento: </p><input type="date" name="dataDeNascimeto" id="birthday">
+                <div class="col-12 checkbox">
+                    <input type="checkbox" name="majority" id="majority" data-majority><span> Declaro ser Maior de 18 Anos</span>
                 </div>
             </div>
-        </section>
-        <section class="container buttons">
             <div class="row">
-                <div class="col-12">
-                    <button id="cadastre-se" type="button" class="btn btn-outline-secondary">Cadastre-se</button>
+                <div id="sup" class="col-12">
+                    <button id="cadastro" type="submit button" class="btn btn-outline-secondary" >Cadastre-se</button>
+                </div>
+            </div>
+            </form>
+            <div class="row">
+                <div class="col-12 errormessage">
+                <p class="col-12 error" style="color: white;" id="sbt"></p>
                 </div>
             </div>
             <div class="row">
@@ -80,7 +85,6 @@
         </section>
 
     </footer>
-
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
@@ -90,6 +94,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="cadastre-se.js"></script>
 </body>
 
 </html>
