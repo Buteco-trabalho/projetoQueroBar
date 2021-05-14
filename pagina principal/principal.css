@@ -1,5 +1,5 @@
-body {
-    overflow-x: hidden;
+body{
+    background-color: rgb(252, 251, 214);
 }
 .centro {
     display: flex;
@@ -43,3 +43,21 @@ a:hover{
     margin-top: 10px;
 }
 /* carousel */
+.d-block{
+    max-width: 50% !important;
+    height: 500px !important;
+}
+#carousel img{
+    text-align: center;
+    display:flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.print{
+    text-align: center;
+}
+.imagem_app{
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
