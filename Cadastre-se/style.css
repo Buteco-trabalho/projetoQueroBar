@@ -72,7 +72,15 @@ footer p {
     justify-content: center;
 }
 .error{
-    width: 300px;
-    height: 40px;
+    width: 300px !important;
+    height: fit-content;
+    margin: auto;
     padding-top: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.error ~ input {
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
 }

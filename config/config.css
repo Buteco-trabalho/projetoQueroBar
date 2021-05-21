@@ -1,12 +1,16 @@
-.cabecalho{
+body {
     background: linear-gradient(168.51deg, #B10598 2.1%, #D01E4A 47.66%, #FF7800 98.81%), #DF6C07;
+}
+.row {
+    margin: 0 !important;
+}
+.cabecalho{
     text-align: center;
 }
 .barra_nav{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding: 10px;
     background-color: #FF8921;
-}
-.bi-arrow-left{
-    margin-top: 5px;
 }
 a{
     text-decoration: none;
@@ -28,15 +32,13 @@ a:hover{
     margin-top: 4px;
 }
 .fundo{
-    border-left: 5px solid black;
     text-align: center;
-    width: 380px;
     margin-top: 40px;
     padding-top: 15px;
     height: 548px;
-    background: linear-gradient(168.51deg, #B10598 2.1%, #D01E4A 47.66%, #FF7800 98.81%), #DF6C07;
 }
 .icone{
+    display: inline-block;
     padding: 2px;
     padding-top: 2px;
 }
@@ -46,13 +48,21 @@ a:hover{
     padding-right: 50px;
 }
 .linha{
+    border-left: solid 5px black;
     border-bottom: 1px solid rgb(73, 73, 73);
     padding: 20px;
 }
+.linha:hover {
+    box-shadow: -5px 0px 0px #000000;
+}
+
 .butao{
     margin-top: 50px;
+    border-radius: 10px;
+    background-color: transparent;
     border: 1px solid black !important;
     width: 75%;
+    margin-bottom: 10px;
     cursor: pointer;
 }
 .posicao{

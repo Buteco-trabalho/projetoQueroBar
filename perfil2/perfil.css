@@ -1,0 +1,144 @@
+.cabecalho{
+    background: linear-gradient(168.51deg, #B10598 2.1%, #D01E4A 47.66%, #FF7800 98.81%), #DF6C07;
+    text-align: center;
+}
+
+.perfil2{
+    text-align: center;
+    margin-right: 100px;
+}
+
+.barra_nav {
+    background-color: #FF8921;
+}
+
+.row{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+body {
+    font-size: 2px;
+    line-height: 1;
+    text-align: center;
+  }
+
+.v68_130 {
+    width: 375px;
+    height: 812px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .name {
+    color: #fff;
+  }
+  .v68_150 {
+    width: 278px;
+    height: 184px;
+    background: rgba(196,196,196,1);
+    opacity: 1;
+    position: absolute;
+    top: 525px;
+    left: 49px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+  }
+  .v68_143 {
+    width: 256px;
+    height: 256px;
+    background: rgba(196,196,196,1);
+    opacity: 1;
+    position: absolute;
+    top: 164px;
+    left: 60px;
+    border-radius: 50%;
+  }
+  .v68_147 {
+    width: 92px;
+    height: 96px;
+    background: url("https://www.dublincity.ie/sites/default/files/styles/square/public/2020-06/silhouette.jpg?h=89289cf7&itok=fT3Zc7e0");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 244px;
+    left: 142px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+  }
+  .v68_148 {
+    width: 163px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 456px;
+    left: 106px;
+    font-family: Voltaire;
+    font-weight: Regular;
+    font-size: 26px;
+    opacity: 1;
+    text-align: center;
+  }
+  .v68_151 {
+    width: 88px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 755px;
+    left: 144px;
+    font-family: Voltaire;
+    font-weight: Regular;
+    font-size: 26px;
+    opacity: 1;
+    text-align: center;
+  }
+  .v68_149 {
+    width: 33px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 600px;
+    left: 171px;
+    font-family: Voltaire;
+    font-weight: Regular;
+    font-size: 26px;
+    opacity: 1;
+    text-align: center;
+  }
+  
+  .v68_158 {
+    width: 217px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 0px;
+    left: 78px;
+    font-family: Voltaire;
+    font-weight: Regular;
+    font-size: 26px;
+    opacity: 1;
+    text-align: center;
+  }
+  .v68_155 {
+    width: 25px;
+    height: 25px;
+    background: url("../images/v68_155.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 74px;
+    left: 34px;
+    overflow: hidden;
+  }

@@ -17,15 +17,22 @@
                 <img src="imagens/LOGO BUTECO (1).png" alt="">
             </div>
         </section>
-        <section class="row">
-            <div class="login col-12">
-                <input type="email" placeholder="Nome de Usuário"> <br>
-                <input type="password" placeholder="Senha">
+        <section class="">
+            <div class="login">
+                <form class="row" id="formulario">
+                <div class="col-12 text-center poEr">
+                <input id="user"type="email" placeholder="Nome de Usuário" data-required data-verify>
+                </div>
+                <div class="col-12 poEr">
+                <input type="password" placeholder="Senha" data-required data-verify-password>
+                </div>
+            </form>
             </div>
         </section>
+        <p class="error"></p>
         <section class="row">
             <div class="entrar col-12">
-                <button type="button" class="btn btn-outline-secondary">Entrar</button>
+              <button id="login" type="button" class="btn btn-outline-secondary">Entrar</button>
             </div>
         </section>
         <section class="row">
@@ -41,7 +48,7 @@
             </div>
         </section>
     </footer>
-
+    <script src="./script.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>

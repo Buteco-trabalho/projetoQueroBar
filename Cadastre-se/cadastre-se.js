@@ -15,9 +15,7 @@ class Validator {
     validate(form){
         
         // resgata todas as validações 
-
         let currentValidations =  document.querySelectorAll('form div .error')
-
         if (currentValidations.length > 0){
             this.cleanValidations(currentValidations);
         }
@@ -159,10 +157,14 @@ class Validator {
             template.classList.remove('template')
 
             inputParent.appendChild(template)
+
+            // modificação de estilos!
+            template.style.backgroundColor = "orange";
+            template.style.color = 'black'
+            template.style.fontWeight = 'bold'
+            template.style.boxShadow = '0px 4px 4px  rgba(0, 0, 0, 0.6)'
         }
     }
-
-
     // verifica se o input é o requerido 
 
     required(input) {
@@ -181,26 +183,27 @@ class Validator {
     }
 }
 
-// objeto com todos os usuários
-const users = {
-
-}
-
-// cria o objeto usuario
-function createUsers(usuario){
-    const sequence = {
-        _id : 1,
-        get id() {return this._id++}
+     // reseta o estilo
+     function resetStyle(){
+        let allDivForms = document.querySelectorAll('.poEr')
+        let ar =[...allDivForms]
+        ar.forEach(e => {
+                let input = e.querySelector('input')
+                if (e.childElementCount == 2){
+                input.style.borderRadius = '5px 5px 0px 0px' 
+                input.style.borderBottom = 'solid 1px black'
+            }
+            else {
+                input.style.borderRadius = '5px' 
+                input.style.borderBottom = '0px'
+            }
+        })
     }
     
-
-    function createUser(usuario){
-        usuario.id = sequence.id
-        users[usuario.id] = usuario
-        return usuario
+    function createUser(user) {
+        localStorage.setItem( user.emailornumber, JSON.stringify(user))
+        window.location.href = "../Pagina Principal/index.html"
     }
-    createUser(usuario)
-}
 
 let validator = new Validator()
 
@@ -213,13 +216,16 @@ submit.addEventListener('click', function(e){
     e.preventDefault();
     validator.validate(form)
     let currentValidations = document.querySelectorAll('form div .error')
+    resetStyle()
     arrayofvalidations = [...currentValidations]
-    console.log(users)
     if (arrayofvalidations.length === 0){
-        createUsers({
+        createUser({
             nome : document.getElementById("Name").value,
             emailornumber : document.getElementById('emailornumber').value,
-            senha : document.getElementById('password').value
+            senha : document.getElementById('password').value,
+            sistemaOperacional: navigator.platform,
+            navegador: navigator.userAgent,
+            linguagem: navigator.language
         })
     }
 })

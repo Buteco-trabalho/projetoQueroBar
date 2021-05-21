@@ -24,23 +24,23 @@
         <section class="container cadastre-se">
             <form method="POST" id="form-reg">
             <div class="row">
-                <div class="col-12 Nome">
+                <div class="col-12 Nome poEr">
                     <input type="text" name="Name" data-letters id="Name" placeholder="Nome" data-min-length="2" data-required>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 ">
+                <div class="col-12 poEr">
                     <input required type="email" name="formadecadastro" id="emailornumber"
                        data-required placeholder="Email ou Numero de Telefone" data-emailornumber-validate>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 poEr">
                     <input type="password" name="Senha" id="password" placeholder="Senha" data-min-length="5" data-required data-password-validate>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 poEr">
                     <input type="password" name="passwordc" id="passwordc" placeholder="Confirmar Senha" data-required data-equal="Senha">
                 </div>
             </div>
@@ -57,7 +57,7 @@
             </form>
             <div class="row">
                 <div class="col-12 errormessage">
-                <p class="col-12 error" style="color: white;" id="sbt"></p>
+                <b><p class="col-12 error" id="sbt"></p></b>
                 </div>
             </div>
             <div class="row">
