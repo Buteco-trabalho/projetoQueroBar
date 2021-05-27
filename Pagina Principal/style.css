@@ -1,5 +1,7 @@
 body{
-    background-color: orange;
+    background-color: #ffa600;
+    font-family: Voltaire;
+    margin-bottom: 100px;
 }
 header{
     width: 100%;
@@ -13,10 +15,21 @@ header{
 .row{
     margin: 0 !important;
 }
-
 main{
-    max-width: 100%;
     background-color: orange;
+}
+
+.bardomacaco{
+    position: relative;
+    background-color: #FF8921;
+    padding-top: 13.3px;
+    padding-bottom: 13.3px;
+    border-top: solid 1px rgb(73, 73, 73);
+}
+.bardomacaco:hover {
+    background-color: #e7730e;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.39));
+    cursor: pointer;
 }
 .bardomacaco img{
     width: 200px;
@@ -27,19 +40,22 @@ main{
     display: inline;
 }
 .bardomacaco svg{
+    position: absolute;
     display: inline;
-    margin-left: 24%;
+    right: 10%;
+    top: 22%;
 }
 footer{
     background: linear-gradient(168.51deg, #B10598 2.1%, #D01E4A 47.66%, #FF7800 98.81%), #DF6C07;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: 55px;
 }
 .footer svg{
     display: inline;
-    margin-left: 40px;
+    margin-left: 12%;
+    margin-right: 2%;
     margin-top: 7px;
     text-align: center;
 }
@@ -52,9 +68,6 @@ a:hover {
 @media screen and ( min-width : 900px){
     .footer svg{
         margin-left: 17%
-    }
-    main{
-        text-align: center;
     }
     .bardomacaco{
         margin-top: 30px;
