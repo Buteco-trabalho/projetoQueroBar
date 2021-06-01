@@ -43,3 +43,7 @@ a:hover{
     margin-top: 10px;
 }
 /* carousel */
+.carousel-item img{
+    width: 100% !important;
+    height: 700px;
+}

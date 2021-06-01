@@ -68,3 +68,9 @@ a:hover{
 .posicao{
     text-align: center;
 }
+.seta{
+    float: left;
+}
+.seta :hover{
+    cursor: pointer;
+}
