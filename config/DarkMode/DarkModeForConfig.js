@@ -4,9 +4,11 @@ button.onclick = e => {
     if(button.checked){
         user.darkMode = true;
         sessionStorage.setItem("user", JSON.stringify(user))
+        window.location.reload()
     }
     else{
         user.darkMode = false
         sessionStorage.setItem("user", JSON.stringify(user))
+        window.location.reload()
     }
 }
