@@ -20,7 +20,7 @@ class Chat{
         let user = JSON.parse(sessionStorage.getItem("user"))
         if (messageValue != false){
             let messageObject = {
-                User : user.nome,
+                User : user.emailornumber,
                 messageBody: messageValue
             }
         this.storageMessage(messageObject, this.PrintMessage)
