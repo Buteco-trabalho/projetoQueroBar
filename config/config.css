@@ -131,3 +131,9 @@ a:hover{
   .slider.round:before {
     border-radius: 50%;
   } 
+  .seta{
+    float: left;
+}
+  .seta :hover{
+    cursor: pointer;
+}
