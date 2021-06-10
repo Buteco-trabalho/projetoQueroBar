@@ -19,7 +19,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 barra_nav">
+                <div class="col-12 head">
                         <div class="titulo">
                     <h3> <a href="../Pagina Principal/index.html"><label class="seta"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
@@ -44,7 +44,6 @@
                     </div>
                 </div>
             </a>
-            <a href="#">
                 <div class="row linha">
                     <div class="col-1 icone">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
@@ -53,11 +52,14 @@
                         </svg>
                     </div>
                     <div class="col-11 text-left texto">
-                        <b>Modo Escuro</b>
+                        <label for="darkmode"><b>Modo Escuro</b></label>
+                        <label class="switch">
+                            <input type="checkbox" id="darkmode">
+                            <span class="slider round"></span>
+                        </label> 
                     </div>
                 </div>
-            </a>
-            <a href="#">
+            <a href="./config_denuncia/denuncia.html">
                 <div class="row linha">
                     <div class="col-1 icone">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
@@ -71,7 +73,7 @@
                     </div>
                 </div>
             </a>
-            <a href="#">
+            <a href="./Privaci/index.html">
                 <div class="row linha">
                     <div class="col-1 icone">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
@@ -99,7 +101,7 @@
                     </div>
                 </div>
             </a>
-            <a href="#">
+            <a href="./config_ajuda/ajuda.html">
                 <div class="row linha">
                     <div class="col-1 icone">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
@@ -137,6 +139,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <script src="./DarkMode/DarkModeForConfig.js" ></script>
+    <script src="DarkMode/DarkMode.js"></script>
 </body>
 
 </html>

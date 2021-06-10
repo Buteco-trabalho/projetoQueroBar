@@ -1,0 +1,89 @@
+body{
+    background-color: orange;
+}
+header{
+    width: 100%;
+    height: 100px;   
+    text-align: center;
+    background: linear-gradient(168.51deg, #B10598 2.1%, #D01E4A 47.66%, #FF7800 98.81%), #DF6C07;
+}
+.logo img{
+    width: 130px;
+}
+.row{
+    margin: 0 !important;
+}
+
+
+
+
+@media screen and ( min-width : 900px){
+    
+    .footer svg{
+        margin-left: 17%
+    }
+    main{
+        text-align: center;
+    }
+}
+
+.cabecalho{
+    background: linear-gradient(168.51deg, #B10598 2.1%, #D01E4A 47.66%, #FF7800 98.81%), #DF6C07;
+    text-align: center;
+}
+.barra_nav{
+    background-color: #FF8921;
+}
+h4{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    color: black;
+    text-decoration: none;
+}
+select#denuncia{
+    width: 70%;
+    border-radius: 10px;
+    background-color: rgb(248, 226, 179);
+}
+input#denuncia{
+    width: 70%;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: rgb(248, 226, 179);
+}
+textarea#txtd{
+    margin-top: 5px;
+    width: 70%;
+    height: 100px;
+    border-radius: 10px;
+    background-color: rgb(248, 226, 179);
+}
+#botao{
+    background-color: white;
+    margin-top: 10px !important;
+    border-radius: 10px !important;
+    background-color: rgb(253, 186, 42);
+}
+.alinhar{
+    text-align: center;
+}
+#botao:hover{
+    background-color: lightgray;
+}
+
+.seta{
+    float: left;
+}
+.seta :hover{
+    cursor: pointer;
+}
+
+h3 
+{
+    text-align: center;
+}
