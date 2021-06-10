@@ -39,13 +39,20 @@ footer{
 }
 .footer svg{
     display: inline;
-    margin-left: 40px;
+    margin-left: 50px;
     margin-top: 7px;
     text-align: center;
 }
-@media screen and ( min-width : 900px){
+a{
+    color: rgba(8, 8, 8, 0.849);
+}
+a :hover{
+    color: black;
+}
+
+@media screen and ( min-width : 400px){
     .footer svg{
-        margin-left: 17%
+        margin-left: 22%
     }
     main{
         text-align: center;
@@ -78,7 +85,7 @@ img {
     border-radius: .25rem;
     background-color: orange;
 }
-.card-img-top{
+img.card-img-top{
     height: 200px;
     width: 200px;
 }

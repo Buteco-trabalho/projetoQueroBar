@@ -68,8 +68,7 @@ a:hover{
 .posicao{
     text-align: center;
 }
- /* The switch - the box around the slider */
- .switch {
+.switch {
     position: absolute;
     display: inline-block;
     width: 60px;
