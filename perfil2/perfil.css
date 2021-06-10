@@ -1,23 +1,15 @@
-body{
-  background:linear-gradient(168.51deg, #B10598 2.1%, #D01E4A 47.66%, #FF7800 98.81%), #DF6C07;
-}
 .cabecalho{
+    background: linear-gradient(168.51deg, #B10598 2.1%, #D01E4A 47.66%, #FF7800 98.81%), #DF6C07;
     text-align: center;
 }
 
 .perfil2{
     text-align: center;
-    margin-right: 10%;
-}
-.barra_nav{
-  background-color: #ff77007e;
-  margin-bottom: 10px;
-  
+    margin-right: 100px;
 }
 
-.cabecalho img{
-  width: 130px;
-  height: 130px;
+.barra_nav {
+    background-color: #FF8921;
 }
 
 .row{
@@ -53,7 +45,7 @@ body {
     background: rgba(196,196,196,1);
     opacity: 1;
     position: absolute;
-    top: 470px;
+    top: 525px;
     left: 49px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -67,7 +59,7 @@ body {
     background: rgba(196,196,196,1);
     opacity: 1;
     position: absolute;
-    top: 80px;
+    top: 164px;
     left: 60px;
     border-radius: 50%;
   }
@@ -80,7 +72,7 @@ body {
     background-size: cover;
     opacity: 1;
     position: absolute;
-    top: 155px;
+    top: 244px;
     left: 142px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -92,7 +84,7 @@ body {
     width: 163px;
     color: rgba(0,0,0,1);
     position: absolute;
-    top: 365px;
+    top: 456px;
     left: 106px;
     font-family: Voltaire;
     font-weight: Regular;
@@ -104,8 +96,8 @@ body {
     width: 88px;
     color: rgba(0,0,0,1);
     position: absolute;
-    top: 730px;
-    left: 126px;
+    top: 755px;
+    left: 144px;
     font-family: Voltaire;
     font-weight: Regular;
     font-size: 26px;
@@ -116,7 +108,7 @@ body {
     width: 33px;
     color: rgba(0,0,0,1);
     position: absolute;
-    top: 550px;
+    top: 600px;
     left: 171px;
     font-family: Voltaire;
     font-weight: Regular;

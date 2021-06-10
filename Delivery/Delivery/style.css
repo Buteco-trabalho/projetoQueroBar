@@ -13,8 +13,8 @@ header{
 .row{
     margin: 0 !important;
 }
+
 main  {
-    height: 100%;
     max-width: 100%;
     background-color: orange;
 }
@@ -78,6 +78,7 @@ img {
     box-sizing: border-box;
 }
 .card {
+
     display: flex;
     flex-direction: column;
     min-width: 0;
@@ -89,6 +90,7 @@ img.card-img-top{
     height: 200px;
     width: 200px;
 }
+
 main{
     margin-top: 1.5%;
 }

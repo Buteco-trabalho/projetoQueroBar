@@ -211,14 +211,6 @@ let validator = new Validator()
 let form = document.getElementById('form-reg')
 let submit = document.getElementById('cadastro')
 
-function armazenaSessao(){
-    let inputVal = document.getElementById('emailornumber').value
-    let user = localStorage.getItem(inputVal)
-    sessionStorage.setItem("user", user)
-    console.log(user)
-    console.log(sessionStorage)
-}
-
 submit.addEventListener('click', function(e){
 
     e.preventDefault();
@@ -226,7 +218,7 @@ submit.addEventListener('click', function(e){
     let currentValidations = document.querySelectorAll('form div .error')
     resetStyle()
     arrayofvalidations = [...currentValidations]
-    if (arrayofvalidations.length === 0){   
+    if (arrayofvalidations.length === 0){
         createUser({
             nome : document.getElementById("Name").value,
             emailornumber : document.getElementById('emailornumber').value,
@@ -235,6 +227,5 @@ submit.addEventListener('click', function(e){
             navegador: navigator.userAgent,
             linguagem: navigator.language
         })
-        armazenaSessao()
     }
 })

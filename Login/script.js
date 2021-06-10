@@ -131,11 +131,6 @@ let validator = new Validator()
 let form = document.getElementById('formulario')
 let submit = document.getElementById('login')
 
-function armazenaSessao(){
-    let inputVal = document.getElementById('user').value
-    let user = localStorage.getItem(inputVal)
-    sessionStorage.setItem("user", user)
-}
 submit.addEventListener('click', function(e){
 
     e.preventDefault();
@@ -144,8 +139,6 @@ submit.addEventListener('click', function(e){
     resetStyle();
     arrayofvalidations = [...currentValidations]
     if(arrayofvalidations.length == 0){
-        armazenaSessao()
         window.location.href = "../Pagina Principal/index.html"
     }
 })
-
