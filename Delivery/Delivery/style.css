@@ -32,7 +32,7 @@ main  {
 }
 footer{
     background: linear-gradient(168.51deg, #B10598 2.1%, #D01E4A 47.66%, #FF7800 98.81%), #DF6C07;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: 55px;
@@ -88,16 +88,13 @@ img {
     border-radius: .25rem;
     background-color: orange;
 }
-.card-img-top{
+img.card-img-top{
     height: 200px;
     width: 200px;
-
 }
 
 main{
     margin-top: 1.5%;
-
-    
 }
 .download img {
     width: 160px;
@@ -108,10 +105,8 @@ main{
 }
 .download {
     display: flex;
-
-
     width: 100%;
-    margin-bottom: 0px !important;
+    margin-bottom: 50px;
     padding-bottom: 40px;
 }
 .download p {
