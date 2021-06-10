@@ -13,7 +13,6 @@ header{
 .row{
     margin: 0 !important;
 }
-
 main  {
     height: 100%;
     max-width: 100%;
@@ -55,7 +54,6 @@ footer{
         margin-top: 30px;
     }
 }
-
 .card-img, .card-img-top {
     border-top-left-radius: calc(.25rem - 1px);
     border-top-right-radius: calc(.25rem - 1px);
@@ -73,7 +71,6 @@ img {
     box-sizing: border-box;
 }
 .card {
-
     display: flex;
     flex-direction: column;
     min-width: 0;
@@ -86,11 +83,8 @@ img {
     width: 200px;
 
 }
-
 main{
     margin-top: 1.5%;
-
-    
 }
 .download img {
     width: 160px;
