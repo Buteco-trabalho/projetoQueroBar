@@ -61,7 +61,6 @@ a :hover{
         margin-top: 30px;
     }
 }
-
 .card-img, .card-img-top {
     border-top-left-radius: calc(.25rem - 1px);
     border-top-right-radius: calc(.25rem - 1px);
@@ -71,7 +70,6 @@ a :hover{
     flex-shrink: 0;
     width: 30%;
 }
-
 img {
     vertical-align: middle;
     border-style: none;
