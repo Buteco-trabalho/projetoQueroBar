@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "nome": "luan",
+      "emailornumber": "luanotaviocostasilva@gmail.com",
+      "senha": "T8YbUPkS3qkRCbK",
+      "sistemaOperacional": "Linux x86_64",
+      "navegador": "Mozilla/5.0 (X11; Linux x86_64; rv:89.0) Gecko/20100101 Firefox/89.0",
+      "linguagem": "pt-BR",
+      "id": 1
+    }
+  ],
+  "grupos": [
+    {
+      "nomeDoGrupo": "amigosBarDoMacaco",
+      "mensagens": []
+    }
+  ],
+  "denuncias": [],
+  "sugestoes": []
+}

@@ -1,10 +1,12 @@
 class Chat{
-    _id = 0
+    messages = [];
+    _id = 0;
     verifyOthersMessages(){
-        let storageID = localStorage.getItem("ID")
-        if(storageID > this._id){
-            return this._id = storageID
+        let Messages = localStorage.getItem("messages")
+        if(Messages.id > this._id){
+            return this._id = Messages.id
         }
+        // fetch("http:localhost:3000/grupos/AmigosBarDoMacaco").then((data) => console.log(data))
     }
     getId = () => {
         this.setId(this._id)

@@ -1,0 +1,46 @@
+body {
+    background:linear-gradient(168.51deg, #B10598 2.1%, #D01E4A 47.66%, #FF7800 98.81%), #DF6C07;
+}
+textarea {
+    width: 350px;
+    height: 200px;
+}
+.container {
+    border-radius: 10px;
+}
+header {
+    text-align: center;
+}
+.navTop {
+    background: chocolate;
+}
+.perfil {
+    background-color: white;
+}
+.perfilImg {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
+.divImg {
+    padding-top: 20px;
+}
+.SectionUser, .divImg {
+    text-align: center;
+    margin-top: 20px;
+}
+.divImg {
+    cursor: pointer;
+}
+.baresImgs > img {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+.barInsignia {
+    text-align: center;
+}
+.header img {
+    width: 200px;
+}
