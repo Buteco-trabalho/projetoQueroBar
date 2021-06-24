@@ -14,6 +14,16 @@ header {
 .navTop {
     background: chocolate;
 }
+#seta{
+    float: left;
+    margin-left: 10px;
+}
+#seta a{
+    color: rgb(17, 16, 16);
+}
+#seta a:hover{
+    color: black;
+}
 .perfil {
     background-color: white;
 }
