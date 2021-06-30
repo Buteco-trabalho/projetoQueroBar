@@ -12,12 +12,7 @@ body {
     padding: 10px;
     background-color: #FF8921;
 }
-a{
-    text-decoration: none;
-}
-a:hover{
-    text-decoration: none;
-}
+
 .titulo{
     font-size: 25px;
     text-align: center;
