@@ -1,25 +1,27 @@
 function inicialize() {
-  let chatBarDoMacaco = {
+  let ChatGeral = {
     messages: [],
     id: 0,
-    ChatName: "Bar Do Macaco",
+    ChatName: "Chat Geral",
   };
   let groups = localStorage.getItem("groups");
   if (groups == null) {
     console.log("nao existe grupo");
     groups = [];
-    groups.push(chatBarDoMacaco);
+    groups.push(ChatGeral);
     localStorage.setItem("groups", JSON.stringify(groups));
   } else {
     groups = JSON.parse(groups);
     groups.forEach((e) => {
-      if (e.ChatName == "Bar Do Macaco") {
-        chatBarDoMacaco = e;
+      if (e.ChatName == "Chat Geral") {
+        ChatGeral = e;
+      } else {
+        groups.push(ChatGeral)
       }
     });
   }
   function PrintAllMessages() {
-    for (let i = 1; i <= chatBarDoMacaco.id; i++) {
+    for (let i = 1; i <= ChatGeral.id; i++) {
       PrintMessage(i);
     }
   }
@@ -30,23 +32,23 @@ function inicialize() {
       let messageObject = {
         User: user.emailornumber,
         messageBody: messageValue,
-        id: chatBarDoMacaco.id + 1,
+        id: ChatGeral.id + 1,
       };
-      chatBarDoMacaco.id = messageObject.id;
+      ChatGeral.id = messageObject.id;
       console.log(messageObject);
       storageMessage(messageObject, PrintMessage);
     }
   }
   function storageMessage(message, next) {
-    chatBarDoMacaco.messages.push(message);
+    ChatGeral.messages.push(message);
     localStorage.setItem("groups", JSON.stringify(groups));
-    console.log(chatBarDoMacaco);
+    console.log(ChatGeral);
     next(message.id);
   }
   function PrintMessage(id) {
     let message;
     console.log(id)
-    chatBarDoMacaco.messages.forEach((e) => {
+    ChatGeral.messages.forEach((e) => {
       if (e.id == id) {
         message = e;
         console.log(message);

@@ -30,9 +30,9 @@
         <div class="container perfil">
             <div class="divImg">
                 <label for="upload">
-                <img class="perfilImg" id="userImg"
-                    src="https://www.dublincity.ie/sites/default/files/styles/square/public/2020-06/silhouette.jpg?h=89289cf7&itok=fT3Zc7e0"
-                    alt="">
+                    <img class="perfilImg" id="userImg"
+                        src="https://www.dublincity.ie/sites/default/files/styles/square/public/2020-06/silhouette.jpg?h=89289cf7&itok=fT3Zc7e0"
+                        alt="">
                 </label>
                 <input type="file" name="upload" id="upload" onchange="Imagem()" style="display: none;">
             </div>
@@ -41,8 +41,20 @@
             </div>
             <div class="SectionUser">
                 <h3>Bio:</h3>
-                <textarea name="bio" id=""></textarea>
-                <p id="bio"></p>
+                <form id="bio">
+                    <textarea name="bio" id="inputBio">
+
+                    </textarea>
+                    <div>
+                        <button type="submit">Enviar Bio</button>
+                    </div>
+                </form>
+                <div class="Biografia">
+                    <p id="pBio"></p>
+                </div>
+                <div id="Edit">
+                    <button>Editar Bio</button>
+                </div>
             </div>
             <div class="barInsignia">
                 <h3>Bares mais frequentados: </h3>

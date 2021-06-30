@@ -19,27 +19,27 @@ main{
     background-color: orange;
 }
 
-.bardomacaco{
+.chat{
     position: relative;
     background-color: #FF8921;
     padding-top: 13.3px;
     padding-bottom: 13.3px;
     border-top: solid 1px rgb(73, 73, 73);
 }
-.bardomacaco:hover {
+.chat:hover {
     background-color: #e7730e;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.39));
     cursor: pointer;
 }
-.bardomacaco img{
+.chat img{
     width: 200px;
     display: inline;
     width: 50px;
 }
-.bardomacaco p{
+.chat p{
     display: inline;
 }
-.bardomacaco svg{
+.chat svg{
     position: absolute;
     display: inline;
     right: 10%;

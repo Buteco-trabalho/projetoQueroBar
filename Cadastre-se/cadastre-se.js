@@ -58,7 +58,7 @@ class Validator {
 
   // aceita somente somente letras!!
   letters(input) {
-    let re = /^[a-zA-z]+$/;
+    let re = /^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$/;
     let Inputvalue = input.value;
 
     let errorMessage = `este campo não aceita numeros ou valores especiais!`;
@@ -189,35 +189,35 @@ function resetStyle() {
 }
 
 function createUser(user) {
-  let User = JSON.stringify(user)
-  localStorage.setItem(user.emailornumber, User)
+  console.log(user)
+  let users = null
+  try {
+    users = JSON.parse(localStorage.getItem("users"))
+  } catch (error) {
+    console.log(error)
+  }
   
-  // fetch("http://localhost:3000/users", {
-  //   method: "POST",
-  //   headers: {
-  //     "Content-Type": "application/json",
-  //   },
-  //   body: JSON.stringify(user),
-  // })
-  //   .then((response) => response.json())
-  //   .then((data) => {
-  //     console.log("Success:", data);
-  //   })
-  //   .catch((error) => {
-  //     console.error("Error:", error);
-  //   });
+  if (users == null){
+    users = {
+      ID : 0,
+      clients: [],
+    }
+  }
+  console.log(users.ID)
+  user.ID = (users.ID + 1);
+  users.ID = user.ID;
+  users.clients.push(user)
+  console.log(users)
+  localStorage.setItem("users", JSON.stringify(users))
+  armazenaSessao(user)
 }
 let validator = new Validator();
 
 let form = document.getElementById("form-reg");
 let submit = document.getElementById("cadastro");
 
-function armazenaSessao() {
-  let inputVal = document.getElementById("emailornumber").value;
-  let user = localStorage.getItem(inputVal);
-  sessionStorage.setItem("user", user);
-  console.log(user);
-  console.log(sessionStorage);
+function armazenaSessao(user) {
+  sessionStorage.setItem("user", JSON.stringify(user));;
 }
 
 submit.addEventListener("click", function (e) {
@@ -235,7 +235,6 @@ submit.addEventListener("click", function (e) {
       navegador: navigator.userAgent,
       linguagem: navigator.language,
     });
-    armazenaSessao();
     window.location.href = "../Pagina Principal/index.html"
   }
 });

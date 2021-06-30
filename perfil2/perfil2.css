@@ -44,3 +44,18 @@ header {
 .header img {
     width: 200px;
 }
+#pBio {
+    display: none;
+    background: gray;
+    min-height: 200px;
+    border-radius: 5px;
+}
+#Edit {
+    display: none;
+}
+button {
+    background: linear-gradient(168.51deg, #B10598 2.1%, #D01E4A 47.66%, #FF7800 98.81%), #DF6C07;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}

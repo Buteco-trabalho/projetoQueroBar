@@ -85,20 +85,35 @@ class Validator {
 
     }
     verify(input){
+        let users = JSON.parse(localStorage.getItem("users")).clients
         let inputValue = input.value
-        let user = JSON.parse(localStorage.getItem(inputValue))
         let errorMessage = 'email ou numero não encontrado.' 
-        if(user == null){
-            this.printMessage(input, errorMessage)
-        }
+        let user
+        users.forEach(e => {
+            if(e.emailornumber == inputValue){
+                user = e.emailornumber
+            }
+            else {
+                this.printMessage(input, errorMessage)
+                user = false
+            }
+        })
+        return user
     }
     verifypassword(input){
-        let userobject = document.getElementById('user').value
-        let user = JSON.parse(localStorage.getItem(userobject))
+        let email = document.getElementById("user")
+        let findUser = this.verify(email)
+        let users = JSON.parse(localStorage.getItem("users")).clients
         let errorMessage = 'senha inválida!'
-        if(input.value != user.senha){
-            this.printMessage(input, errorMessage)
-        }
+        users.forEach(e => {
+            if(e.senha == input.value && e.emailornumber == findUser){
+                
+            }
+            else {
+                this.printMessage(input, errorMessage)
+            }
+        })
+        
     }
     // limpa as validacoes da tela
     cleanValidations(validations){
@@ -133,8 +148,14 @@ let submit = document.getElementById('login')
 
 function armazenaSessao(){
     let inputVal = document.getElementById('user').value
-    let user = localStorage.getItem(inputVal)
-    sessionStorage.setItem("user", user)
+    let users = JSON.parse(localStorage.getItem("users")).clients
+    user = false
+    users.forEach(e => {
+        if (inputVal == e.emailornumber){
+            user = e
+        }
+    })
+    sessionStorage.setItem("user", JSON.stringify(user))
 }
 submit.addEventListener('click', function(e){
 

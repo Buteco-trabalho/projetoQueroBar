@@ -1,6 +1,8 @@
-let group = [...document.getElementsByClassName("bardomacaco")]
+let group = [...document.getElementsByClassName("chat")]
 group.forEach(e => {
     e.addEventListener('click',function (){
-        window.location.href = './AmigosBarDoMacaco/grupo.html'
+        console.log(e)
+        console.log(e.id)
+        window.location.href = `./${e.id}/grupo.html`
     })
 })
