@@ -48,9 +48,14 @@ footer{
 }
 .footer svg{
     display: inline;
-    margin-left: 40px;
     margin-top: 7px;
-    text-align: center;
+}
+.footer a{
+    color: rgb(20, 20, 20);
+    margin-left: 4%;
+}
+.footer a:hover{
+    color: black;
 }
 @media screen and ( min-width : 900px){
     .footer svg{
