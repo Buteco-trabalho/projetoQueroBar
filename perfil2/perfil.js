@@ -1,7 +1,6 @@
 let bio = document.getElementById("bio");
 let inputBio = document.getElementById("inputBio");
 let editar = document.getElementById("Edit");
-// let reader = new FileReader();
 let user = JSON.parse(sessionStorage.getItem("user"));
 let users = JSON.parse(localStorage.getItem("users"));
 console.log(users.clients);
@@ -39,27 +38,22 @@ editar.addEventListener("click", (e) => {
   editar.style.display = "none";
 });
 
-// function toBase64String(img) {
-//   var canvas = document.createElement("canvas");
-//   canvas.width = img.width;
-//   canvas.height = img.height;
-//   var ctx = canvas.getContext("2d");
-//   ctx.drawImage(img, 0, 0);
-//   var dataURL = canvas.toDataURL(imagem);
-//   return dataURL;
-// }
-// function Imagem() {
-//   let imagem = document.getElementById("upload").files[0];
-//   let preview = document.querySelector("#userImg");
-//   let reader = new FileReader();
 
-//   reader.onloadend = function () {
-//     preview.src = reader.result;
-//   };
-//   if (imagem) {
-//     reader.readAsDataURL(imagem);
-//     localStorage.setItem("minha-imagem", toBase64String(imagem));
-//   } else {
-//     preview.src = "";
-//   }
-// }
+document.getElementById("arquivo").addEventListener("change", function () {
+  let reader = new FileReader();
+
+  reader.addEventListener("load", () => {
+    localStorage.setItem("arquivo-imagem", reader.result);
+  })
+
+  reader.readAsDataURL(this.files[0])
+})
+
+document.addEventListener("DOMContentLoaded", () => {
+  let imagem = localStorage.getItem("arquivo-imagem")
+
+  if (imagem) {
+    document.getElementById("userImg").setAttribute("src", imagem)
+  }
+})
+
