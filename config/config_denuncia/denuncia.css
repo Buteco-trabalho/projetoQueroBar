@@ -50,7 +50,7 @@ select#denuncia{
     border-radius: 10px;
     background-color: rgb(248, 226, 179);
 }
-input#denuncia{
+input#Email{
     width: 70%;
     margin-top: 5px;
     border-radius: 10px;

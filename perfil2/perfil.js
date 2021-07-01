@@ -43,14 +43,27 @@ document.getElementById("arquivo").addEventListener("change", function () {
   let reader = new FileReader();
 
   reader.addEventListener("load", () => {
-    localStorage.setItem("arquivo-imagem", reader.result);
+    let imagem = reader.result;
+    if (imagem) {
+      document.getElementById("userImg").setAttribute("src", imagem)
+      user.imagem = imagem
+      sessionStorage.setItem("user", JSON.stringify(user));
+      users.clients.forEach((e) => {
+        if (user.emailornumber == e.emailornumber) {
+          e.imagem = user.imagem;
+        }
+      });
+      localStorage.setItem("users", JSON.stringify(users))
+
+    }
   })
+  
 
   reader.readAsDataURL(this.files[0])
 })
 
 document.addEventListener("DOMContentLoaded", () => {
-  let imagem = localStorage.getItem("arquivo-imagem")
+  let imagem = user.imagem
 
   if (imagem) {
     document.getElementById("userImg").setAttribute("src", imagem)

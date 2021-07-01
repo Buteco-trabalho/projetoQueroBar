@@ -1,5 +1,17 @@
 body {
-    overflow-x: hidden;
+ background: linear-gradient(91.56deg, #E38129 2.09%, #EC1E4D 50.9%, #B10598 98.71%), #E38129;
+}
+.row {
+    margin: 0 !important;
+    background: white;
+}
+#header {
+    border-radius: 10px 10px 0px 0px;
+}
+header {
+    margin-top: 50px;
+    border-radius: 5px;
+   top: 10px;
 }
 .centro {
     display: flex;

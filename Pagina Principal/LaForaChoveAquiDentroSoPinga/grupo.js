@@ -1,27 +1,27 @@
 function inicialize() {
-  let AmigosBarDoMacaco = {
+  let LaForaChoveAquiDentroPinga = {
     messages: [],
     id: 0,
-    ChatName: "amigos Bar Do Macaco",
+    ChatName: "La Fora Chove Aqui Dentro Pinga",
   };
   let groups = localStorage.getItem("groups");
   if (groups == null) {
     console.log("nao existe grupo");
     groups = [];
-    groups.push(AmigosBarDoMacaco);
+    groups.push(LaForaChoveAquiDentroPinga);
     localStorage.setItem("groups", JSON.stringify(groups));
   } else {
     groups = JSON.parse(groups);
     groups.forEach((e) => {
-      if (e.ChatName == "amigos Bar Do Macaco") {
-        AmigosBarDoMacaco = e;
+      if (e.ChatName == "La Fora Chove Aqui Dentro Pinga") {
+        LaForaChoveAquiDentroPinga = e;
       } else {
-        groups.push(AmigosBarDoMacaco)
+        groups.push(LaForaChoveAquiDentroPinga)
       }
     });
   }
   function PrintAllMessages() {
-    for (let i = 1; i <= AmigosBarDoMacaco.id; i++) {
+    for (let i = 1; i <= LaForaChoveAquiDentroPinga.id; i++) {
       PrintMessage(i);
     }
   }
@@ -32,23 +32,23 @@ function inicialize() {
       let messageObject = {
         User: user.emailornumber,
         messageBody: messageValue,
-        id: AmigosBarDoMacaco.id + 1,
+        id: LaForaChoveAquiDentroPinga.id + 1,
       };
-      AmigosBarDoMacaco.id = messageObject.id;
+      LaForaChoveAquiDentroPinga.id = messageObject.id;
       console.log(messageObject);
       storageMessage(messageObject, PrintMessage);
     }
   }
   function storageMessage(message, next) {
-    AmigosBarDoMacaco.messages.push(message);
+    LaForaChoveAquiDentroPinga.messages.push(message);
     localStorage.setItem("groups", JSON.stringify(groups));
-    console.log(AmigosBarDoMacaco);
+    console.log(LaForaChoveAquiDentroPinga);
     next(message.id);
   }
   function PrintMessage(id) {
     let message;
     console.log(id)
-    AmigosBarDoMacaco.messages.forEach((e) => {
+    LaForaChoveAquiDentroPinga.messages.forEach((e) => {
       if (e.id == id) {
         message = e;
         console.log(message);
@@ -75,4 +75,4 @@ window.onload = inicialize();
 
 
 
-// /home/luan/Downloads/projetoquero/projetoQueroBar/Pagina Principal/AmigosBarDoMacaco/grupo.js
+// /home/luan/Downloads/projetoquero/projetoQueroBar/Pagina Principal/LaForaChoveAquiDentroPinga/grupo.js

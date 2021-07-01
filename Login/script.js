@@ -88,16 +88,15 @@ class Validator {
         let users = JSON.parse(localStorage.getItem("users")).clients
         let inputValue = input.value
         let errorMessage = 'email ou numero não encontrado.' 
-        let user
+        let user = false
         users.forEach(e => {
             if(e.emailornumber == inputValue){
                 user = e.emailornumber
             }
-            else {
-                this.printMessage(input, errorMessage)
-                user = false
-            }
         })
+        if(user == false){
+            this.printMessage(input, errorMessage)
+        }
         return user
     }
     verifypassword(input){
@@ -105,14 +104,15 @@ class Validator {
         let findUser = this.verify(email)
         let users = JSON.parse(localStorage.getItem("users")).clients
         let errorMessage = 'senha inválida!'
+        let user = false
         users.forEach(e => {
             if(e.senha == input.value && e.emailornumber == findUser){
-                
-            }
-            else {
-                this.printMessage(input, errorMessage)
+                user = true;
             }
         })
+        if (user == false) {
+            this.printMessage(input, errorMessage)
+        }
         
     }
     // limpa as validacoes da tela

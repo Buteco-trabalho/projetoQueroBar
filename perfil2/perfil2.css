@@ -69,3 +69,9 @@ button {
     padding: 10px;
     border-radius: 5px;
 }
+#arquivo {
+    display: none;
+}
+#logo {
+    width: 130px;
+}

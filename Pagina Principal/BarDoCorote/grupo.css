@@ -1,0 +1,65 @@
+.top{
+    background: linear-gradient(91.56deg, #E38129 2.09%, #EC1E4D 50.9%, #B10598 98.71%), #E38129;
+    height: 120px;
+}
+.titulo{
+    margin-top: 6%;
+    text-align: center;
+    font-size: 30px;
+}
+#imagemDoGrupo{
+    width: 100%;
+    height: 80%;
+    min-width: 90px;
+    min-height: 80px;
+}
+#back{
+    position: absolute;
+    top: 8%;
+    margin-left: 5px;
+}
+.row {
+    margin: 0px !important;
+}
+.chat{
+    min-height: 50vh;
+}
+form {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    padding: 15px;
+}
+#mensagem {
+    width: 100%;
+    background: #C4C4C4;
+    border: none;
+    height: 40px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.mensagem{
+    word-wrap: break-word;
+    height: max-content;
+    background-color: #C4C4C4;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 12%;
+    margin-top: 12px;
+}
+.botao {
+    background: #C4C4C4;
+    height: 32px;
+    width: 32px;
+    border: none;
+    margin-top: 2px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+main {
+    margin-top: 20px;
+    margin-bottom: 5%;
+}
+i{
+    color: black !important;
+}

@@ -72,3 +72,7 @@ function inicialize() {
   PrintAllMessages()
 }
 window.onload = inicialize();
+
+
+
+// /home/luan/Downloads/projetoquero/projetoQueroBar/Pagina Principal/ChatGeral/grupo.js

@@ -1,27 +1,27 @@
 function inicialize() {
-  let AmigosBarDoMacaco = {
+  let BarDoCorote = {
     messages: [],
     id: 0,
-    ChatName: "amigos Bar Do Macaco",
+    ChatName: "Bar do Corote",
   };
   let groups = localStorage.getItem("groups");
   if (groups == null) {
     console.log("nao existe grupo");
     groups = [];
-    groups.push(AmigosBarDoMacaco);
+    groups.push(BarDoCorote);
     localStorage.setItem("groups", JSON.stringify(groups));
   } else {
     groups = JSON.parse(groups);
     groups.forEach((e) => {
-      if (e.ChatName == "amigos Bar Do Macaco") {
-        AmigosBarDoMacaco = e;
+      if (e.ChatName == "Bar do Corote") {
+        BarDoCorote = e;
       } else {
-        groups.push(AmigosBarDoMacaco)
+        groups.push(BarDoCorote)
       }
     });
   }
   function PrintAllMessages() {
-    for (let i = 1; i <= AmigosBarDoMacaco.id; i++) {
+    for (let i = 1; i <= BarDoCorote.id; i++) {
       PrintMessage(i);
     }
   }
@@ -32,23 +32,23 @@ function inicialize() {
       let messageObject = {
         User: user.emailornumber,
         messageBody: messageValue,
-        id: AmigosBarDoMacaco.id + 1,
+        id: BarDoCorote.id + 1,
       };
-      AmigosBarDoMacaco.id = messageObject.id;
+      BarDoCorote.id = messageObject.id;
       console.log(messageObject);
       storageMessage(messageObject, PrintMessage);
     }
   }
   function storageMessage(message, next) {
-    AmigosBarDoMacaco.messages.push(message);
+    BarDoCorote.messages.push(message);
     localStorage.setItem("groups", JSON.stringify(groups));
-    console.log(AmigosBarDoMacaco);
+    console.log(BarDoCorote);
     next(message.id);
   }
   function PrintMessage(id) {
     let message;
     console.log(id)
-    AmigosBarDoMacaco.messages.forEach((e) => {
+    BarDoCorote.messages.forEach((e) => {
       if (e.id == id) {
         message = e;
         console.log(message);
@@ -75,4 +75,4 @@ window.onload = inicialize();
 
 
 
-// /home/luan/Downloads/projetoquero/projetoQueroBar/Pagina Principal/AmigosBarDoMacaco/grupo.js
+// /home/luan/Downloads/projetoquero/projetoQueroBar/Pagina Principal/BarDoCorote/grupo.js

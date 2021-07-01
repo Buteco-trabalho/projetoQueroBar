@@ -8,14 +8,14 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="denuncia.css">
-  <title>Buteco Virtual - Denuncia</title>
+  <title>Buteco Virtual</title>
 </head>
 
 <body>
   <header>
     <section class="row logo">
       <div class="col-12">
-        <img src="LOGO BUTECO.png" alt="">
+        <img src="./imgs/LOGO BUTECO.png" alt="">
 
       </div>
     </section>
@@ -36,14 +36,14 @@
         <div class="row">
           <div class="col-12 alinhar">
             <select name="denuncia" id="denuncia">
-              <option value="1">Assédio</option>
-              <option value="2">Preconceito</option>
-              <option value="3">Xingamentos</option>
-              <option value="4">Outro</option>
+              <option value="Assédio">Assédio</option>
+              <option value="Preconceito">Preconceito</option>
+              <option value="Xingamentos">Xingamentos</option>
+              <option value="Outro">Outro</option>
             </select>
           </div>
           <div class="col-12">
-            <input type="text" name="txte" id="denuncia" placeholder="digite o email da pessoa que está denunciando">
+            <input type="text" name="txte" id="Email" placeholder="digite o email da pessoa que está denunciando">
           </div>
         </div>
         <div class="row">
@@ -56,7 +56,7 @@
 
   </main>
   <footer class="alinhar">
-    <input id="botao" type="button" value="ENVIAR" onclick="salvarDados() , armazenarDenuncia()">
+    <input id="botao" type="button" value="ENVIAR" onclick="salvarDados()">
   </footer>
 
 
@@ -70,6 +70,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+    <script src="./denuncia.js"></script>
 </body>
 
 </html>

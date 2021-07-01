@@ -1,27 +1,27 @@
 function inicialize() {
-  let AmigosBarDoMacaco = {
+  let BarBrasil = {
     messages: [],
     id: 0,
-    ChatName: "amigos Bar Do Macaco",
+    ChatName: "Bar Brasil",
   };
   let groups = localStorage.getItem("groups");
   if (groups == null) {
     console.log("nao existe grupo");
     groups = [];
-    groups.push(AmigosBarDoMacaco);
+    groups.push(BarBrasil);
     localStorage.setItem("groups", JSON.stringify(groups));
   } else {
     groups = JSON.parse(groups);
     groups.forEach((e) => {
-      if (e.ChatName == "amigos Bar Do Macaco") {
-        AmigosBarDoMacaco = e;
+      if (e.ChatName == "Bar Brasil") {
+        BarBrasil = e;
       } else {
-        groups.push(AmigosBarDoMacaco)
+        groups.push(BarBrasil)
       }
     });
   }
   function PrintAllMessages() {
-    for (let i = 1; i <= AmigosBarDoMacaco.id; i++) {
+    for (let i = 1; i <= BarBrasil.id; i++) {
       PrintMessage(i);
     }
   }
@@ -32,23 +32,23 @@ function inicialize() {
       let messageObject = {
         User: user.emailornumber,
         messageBody: messageValue,
-        id: AmigosBarDoMacaco.id + 1,
+        id: BarBrasil.id + 1,
       };
-      AmigosBarDoMacaco.id = messageObject.id;
+      BarBrasil.id = messageObject.id;
       console.log(messageObject);
       storageMessage(messageObject, PrintMessage);
     }
   }
   function storageMessage(message, next) {
-    AmigosBarDoMacaco.messages.push(message);
+    BarBrasil.messages.push(message);
     localStorage.setItem("groups", JSON.stringify(groups));
-    console.log(AmigosBarDoMacaco);
+    console.log(BarBrasil);
     next(message.id);
   }
   function PrintMessage(id) {
     let message;
     console.log(id)
-    AmigosBarDoMacaco.messages.forEach((e) => {
+    BarBrasil.messages.forEach((e) => {
       if (e.id == id) {
         message = e;
         console.log(message);
@@ -75,4 +75,4 @@ window.onload = inicialize();
 
 
 
-// /home/luan/Downloads/projetoquero/projetoQueroBar/Pagina Principal/AmigosBarDoMacaco/grupo.js
+// /home/luan/Downloads/projetoquero/projetoQueroBar/Pagina Principal/BarBrasil/grupo.js
