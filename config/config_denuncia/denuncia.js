@@ -15,6 +15,7 @@ function salvarDados(){
         tipo = document.getElementById('denuncia').value
         let denuncia = new Denuncia(tipo, mensagem, email);
         armazenarDenuncia(denuncia);
+        window.location.reload()
     }
 function armazenarDenuncia(denuncia){
     let ArrayofDenuncias;
@@ -36,7 +37,10 @@ function armazenarDenuncia(denuncia){
     .denuncias
     .push(denuncia)
     localStorage.setItem("denuncias", JSON.stringify(ArrayofDenuncias))
-
+    window.load = () => {
+        mensagem.value = ""
+        email.value = ""
+    }
 }
 
 
