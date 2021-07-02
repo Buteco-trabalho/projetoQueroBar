@@ -1,5 +1,5 @@
 body {
- background: linear-gradient(91.56deg, #E38129 2.09%, #EC1E4D 50.9%, #B10598 98.71%), #E38129;
+ background: linear-gradient(91.56deg, #E38129 2.09%, #EC1E4D 50.9%, #B10598 98.71%), #E38129; 
 }
 .row {
     margin: 0 !important;
@@ -19,6 +19,9 @@ header {
 }
 .mainbutton {
     min-width: 300px !important; 
+}
+.beer {
+    margin-bottom: 400px;
 }
 
 .login {
