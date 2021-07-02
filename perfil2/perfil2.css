@@ -36,12 +36,12 @@ header {
 .divImg {
     padding-top: 20px;
 }
+.perfilImg{
+    cursor: pointer;
+}
 .SectionUser, .divImg {
     text-align: center;
     margin-top: 20px;
-}
-.divImg {
-    cursor: pointer;
 }
 .baresImgs > img {
     width: 100px;

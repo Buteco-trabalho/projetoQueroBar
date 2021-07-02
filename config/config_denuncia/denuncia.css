@@ -93,3 +93,8 @@ h3
 {
     text-align: center;
 }
+
+input,textarea,select{
+
+    box-shadow: 1px 1px;
+}

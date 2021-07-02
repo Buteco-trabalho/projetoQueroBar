@@ -27,14 +27,30 @@
           <div class="card-body">
             <h3 class="card-tittle font-weight-bold text-center">NOTIFICAÇÕES</h3>
             <ul class="list-group">
-              <li class="list-group-item"><p>Receber notificações do aplicativo</p><i class="bi bi-toggle-on"></i></li>
-              <li class="list-group-item"><p>Receber mensagens dos grupos</p><i class="bi bi-toggle-on"></i></li>
-              <li class="list-group-item"><p>Sons de jogo</p><i class="bi bi-toggle-on"></i></li>
+              <li class="list-group-item">
+                <p>Receber notificações do aplicativo</p> <label class="switch">
+                  <input type="checkbox" id="darkmode">
+                  <span class="slider round"></span>
+                </label>
+              </li>
+              <li class="list-group-item">
+                <p>Receber mensagens dos grupos</p><label class="switch">
+                  <input type="checkbox" id="darkmode">
+                  <span class="slider round"></span>
+                </label>
+              </li>
+              <li class="list-group-item">
+                <p>Sons de jogo</p><label class="switch">
+                  <input type="checkbox" id="darkmode">
+                  <span class="slider round"></span>
+                </label>
+              </li>
               <li class="list-group-item">
                 <p>Solicitações para participar de grupos:</p>
                 <div class="naoquebrar">
-                  <div class="solicitacoes-grupo"><i class="bi bi-record2"></i>de todos</div>
-                  <div class="solicitacoes-grupo"><i class="bi bi-record"></i>meus contatos</div>
+                  <div class="solicitacoes-grupo"><input type="radio" checked> todos</div>
+                  <div class="solicitacoes-grupo"><input type="radio" checked > contatos</div>
+
                 </div>
               </li>
             </ul>
