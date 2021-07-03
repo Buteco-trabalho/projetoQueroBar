@@ -18,6 +18,9 @@ header{
 main{
     background-color: orange;
 }
+.imagem{
+    border-radius: 100px;
+}
 
 .chat{
     position: relative;

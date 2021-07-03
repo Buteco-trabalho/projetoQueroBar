@@ -7,11 +7,20 @@
     text-align: center;
     font-size: 30px;
 }
-#imagemDoGrupo{
+/*#imagemDoGrupo{
     width: 100%;
     height: 80%;
     min-width: 90px;
     min-height: 80px;
+}*/
+#imagemDoGrupo{
+    width: 90px;
+    height: 60px;
+    min-width: 90px;
+    min-height: 80px;
+    border-radius: 100px;
+    margin-top: 20px;
+    margin-left: 50px;
 }
 #back{
     position: absolute;
