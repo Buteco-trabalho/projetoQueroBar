@@ -13,6 +13,16 @@ header{
 .row{
     margin: 0 !important;
 }
+
+.seta{
+    margin-left: 10px;
+}
+.seta a{
+    color: rgb(34, 33, 33);
+}
+.seta a:hover{
+    color: black;
+}
 main  {
     height: 100%;
     max-width: 100%;

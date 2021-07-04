@@ -1,115 +1,48 @@
-body {
-	overflow-x: hidden;
+body{
+    background-color: orange;
 }
-.row {
-    margin-left: auto; 
-    margin-right: auto; 
-	display:flex
+header{
+    width: 100%;
+    height: 12%;   
+    text-align: center;
+    background: linear-gradient(168.51deg, #B10598 2.1%, #D01E4A 47.66%, #FF7800 98.81%), #DF6C07;
 }
-
-.container{
-	width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-	max-width: 960px;
-	max-width: 720px;
-	max-width: 540px;
+.logo img{
+    width: 130px;
 }
-.e217_48 { 
-	background-color:rgba(255, 255, 255, 1);
-	width:375px;
-	height:812px;
-	position:absolute;
-	
+.row{
+    margin: 0 !important;
 }
-.e217_83 { 
-	
-	width:387px;
-	height:43px;
-	position:absolute;
-	left:-1px;
-	top:65px;
-	
+#seta{
+    float: left;
 }
-.e217_84 { 
-	background-color:rgba(255, 137.35977172851562, 32.93749898672104, 1);
-	width:900%;
-	height:35px;
-	position:absolute;
-	left:-900px;
-	top:0px;
+.seta a{
+    color: rgb(29, 29, 29);
 }
-.e217_85 { 
-	color:rgba(0, 0, 0, 1);
-	width:271.10693359375px;
-	height:43px;
-	position:absolute;
-	left:57.94644546508789px;
-	top:0px;
-	font-family:Voltaire;
-	text-align:center;
-	font-size:26.797470092773438px;
-	letter-spacing:0;
+h3 a:hover{
+    color: black;
+    cursor: pointer;
 }
-.e217_89 { 
-	transform: rotate(180deg);
-	width:25px;
-	height:25px;
-	position:absolute;
-	left:-700px;
-	top:74px;
-	background-image:url(images/right_arrow.png);
-	background-repeat:no-repeat;
-	background-size:cover;
-}
-.e217_86 { 
-	background-color:rgba(227.37499594688416, 128.50186944007874, 40.73802441358566, 1);
-	background-image:linear-gradient(0deg, rgba(227.37499594688416, 128.50186944007874, 40.73802441358566, 1) 0%,rgba(235.87500303983688, 30.467190742492676, 77.28178828954697, 1) 50.52083134651184%,rgba(177.43749797344208, 5.175261497497559, 152.45947748422623, 1) 100%) ;
-	width:387px;
-	height:68px;
-	position:absolute;
-	left:-1px;
-	top:-3px;
-}
-.ei217_86_3_1 { 
-	background-color:rgba(227.37499594688416, 128.50186944007874, 40.73802441358566, 1);
-	background-image:linear-gradient(0deg, rgba(227.37499594688416, 128.50186944007874, 40.73802441358566, 1) 0%,rgba(235.87500303983688, 30.467190742492676, 77.28178828954697, 1) 50.52083134651184%,rgba(177.43749797344208, 5.175261497497559, 152.45947748422623, 1) 100%) ;
-	width:900%;
-	height:68px;
-	position:absolute;
-	left:-900px;
-	top:0px;
-}
-.ei217_86_31_4 { 
-	width:84px;
-	height:69px;
-	position:absolute;
-	left:146px;
-	top:-1px;
-	background-image:url(images/logo_buteco_2.png);
-	background-repeat:no-repeat;
-	background-size:cover;
-}
-.e218_1 { 
-	color:rgba(0, 0, 0, 1);
-	width:318px;
-	height:107px;
-	position:absolute;
-	left:28px;
-	top:129px;
-	font-family:Voltaire;
-	text-align:center;
-	font-size:35px;
-	letter-spacing:0;
+h3{
+    text-align: center;
 }
 
-.e230_52 { 
-	width:266px;
-	height:52.000701904296875px;
-	position:absolute;
-	left:55px;
-	top:254px;
-	border-radius:10px;
+.mensagem{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 110%;
+}
+
+.marcacao{
+    text-align: center;
+    font-size: 105%;
+}
+.online{
+    width: 90%;
+    border-width: 5px;
+    border-style:outset;
+    border-color: rgb(255, 95, 37);
+    padding: 0px;
+    background-color: rgb(255, 178, 34);
+    height: 40%;
 }
