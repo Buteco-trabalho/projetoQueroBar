@@ -12,13 +12,16 @@ function inicialize() {
     localStorage.setItem("groups", JSON.stringify(groups));
   } else {
     groups = JSON.parse(groups);
+    let existe = false;
     groups.forEach((e) => {
-      if (e.ChatName == "La Fora Chove Aqui Dentro Pinga") {
+      if (e.ChatName == "La fora chove aqui dentro Pinga") {
         LaForaChoveAquiDentroPinga = e;
-      } else {
-        groups.push(LaForaChoveAquiDentroPinga)
+        existe = true
       }
     });
+    if (!existe){
+      groups.push(LaForaChoveAquiDentroPinga);
+    }
   }
   function PrintAllMessages() {
     for (let i = 1; i <= LaForaChoveAquiDentroPinga.id; i++) {

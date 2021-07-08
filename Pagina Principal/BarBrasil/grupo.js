@@ -12,13 +12,16 @@ function inicialize() {
     localStorage.setItem("groups", JSON.stringify(groups));
   } else {
     groups = JSON.parse(groups);
+    let existe = false;
     groups.forEach((e) => {
       if (e.ChatName == "Bar Brasil") {
         BarBrasil = e;
-      } else {
-        groups.push(BarBrasil)
+        existe = true
       }
     });
+    if (!existe){
+      groups.push(BarBrasil);
+    }
   }
   function PrintAllMessages() {
     for (let i = 1; i <= BarBrasil.id; i++) {

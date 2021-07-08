@@ -37,10 +37,12 @@ function armazenarDenuncia(denuncia){
     .denuncias
     .push(denuncia)
     localStorage.setItem("denuncias", JSON.stringify(ArrayofDenuncias))
-    window.load = () => {
-        mensagem.value = ""
-        email.value = ""
-    }
+}
+window.onload = () => {
+    let mensagem = document.getElementById("txtd")
+    let email = document.getElementById("Email")
+    mensagem.value = "";
+    email.value = "";
 }
 
 

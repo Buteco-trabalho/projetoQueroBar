@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="darkMode"> 
     <section class="row logo">
       <div class="col-12">
         <img src="LOGO BUTECO (1).png" alt="">
@@ -22,7 +22,7 @@
   </header>
   <main>
     <div class="container-fluid notificacoes">
-      <div class="row justify-content-center">
+      <div class="row justify-content-center darkMode">
         <div class="col col-sm-10 col-md-10 col-lg-8 col-xl-6">
           <div class="card-body">
             <h3 class="card-tittle font-weight-bold text-center">NOTIFICAÇÕES</h3>
@@ -48,9 +48,8 @@
               <li class="list-group-item">
                 <p>Solicitações para participar de grupos:</p>
                 <div class="naoquebrar">
-                  <div class="solicitacoes-grupo"><input type="radio" checked> todos</div>
-                  <div class="solicitacoes-grupo"><input type="radio" checked > contatos</div>
-
+                  <div class="solicitacoes-grupo"><input type="radio" name="not"> todos</div>
+                  <div class="solicitacoes-grupo"><input type="radio" name="not" checked > contatos</div>
                 </div>
               </li>
             </ul>
@@ -101,6 +100,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+    <script src="../DarkMode/DarkMode.js"></script>
 </body>
 
 </html>
