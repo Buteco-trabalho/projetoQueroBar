@@ -1,0 +1,30 @@
+body{
+    background-color: orange;
+}
+header{
+    width: 100%;
+    height: 100px;   
+    text-align: center;
+    background: linear-gradient(168.51deg, #B10598 2.1%, #D01E4A 47.66%, #FF7800 98.81%), #DF6C07;
+}
+.logo img{
+    width: 130px;
+}
+.row{
+    margin: 0 !important;
+}
+h3 
+{
+    text-align: center;
+}
+.seta {
+    float: left;
+    margin-left: 10px;
+}
+.card {
+    margin: 1px;
+}
+.principal {
+    display: flex;
+    justify-content: center;
+}

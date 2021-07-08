@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Buteco Virtual - Cadastre-se</title>
+    <link rel="icon" href="../Login/imagens/LogoIcon.jpeg" type="image/icon type">
+</head>
+
+<body>
+    <main class="main">
+        <section class="container">
+            <div class="row">
+                <div class="logo col-12">
+                    <img src="../Login/imagens/LOGO BUTECO (1).png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="container cadastre-se">
+            <form method="POST" id="form-reg">
+            <div class="row">
+                <div class="col-12 Nome poEr">
+                    <input type="text" name="Name" data-letters id="Name" placeholder="Nome" data-min-length="2" data-required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 poEr">
+                    <input required type="email" name="formadecadastro" id="emailornumber"
+                       data-required placeholder="Email ou Numero de Telefone" data-emailornumber-validate>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 poEr">
+                    <input type="password" name="Senha" id="password" placeholder="Senha" data-min-length="5" data-required data-password-validate>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 poEr">
+                    <input type="password" name="passwordc" id="passwordc" placeholder="Confirmar Senha" data-required data-equal="Senha">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 checkbox">
+                    <input type="checkbox" name="majority" id="majority" data-majority><span> Declaro ser Maior de 18 Anos</span>
+                </div>
+            </div>
+            <div class="row">
+                <div id="sup" class="col-12">
+                    <button id="cadastro" type="submit button" class="btn btn-outline-secondary" >Cadastre-se</button>
+                </div>
+            </div>
+            </form>
+            <div class="row">
+                <div class="col-12 errormessage">
+                <b><p class="col-12 error" id="sbt"></p></b>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 link">
+                    <div id="conecte-se">
+                        <p>tem conta? <a href="../Login/login.html">contecte-se.</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>Baixe o aplicativo.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img id="google" src="../Login/imagens/google-play-badge.png" alt="" srcset="">
+                    <img src="../Login/imagens/Download_on_the_App_Store_Badge_PTBR_RGB_blk_092917.svg" alt="" srcset="">
+                </div>              
+            </div>
+        </section>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="cadastre-se.js"></script>
+</body>
+
+</html>

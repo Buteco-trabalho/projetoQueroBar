@@ -7,52 +7,48 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"crossorigin="anonymous">
-    <title>Boteco Virtual</title>
+    <title>Buteco Virtual - Login</title>
+    <link rel="icon" href="imagens/LogoIcon.jpeg" type="image/icon type">
 </head>
 <body>
-    <main class="main">
+    <main class="container main">
         <section class="row">
             <div class="logo col-12">
                 <img src="imagens/LOGO BUTECO (1).png" alt="">
             </div>
         </section>
-        <!--<section class="row">
-            <div class="titulo col-12">
-                <h1>Boteco Virtual</h1>
-            </div>
-        </section>-->
-        <section class="row">
-            <div class="login col-12">
-                <input type="email" placeholder="Email de Login"> <br>
-                <input type="password" placeholder="Senha">
+        <section class="">
+            <div class="login">
+                <form class="row" id="formulario">
+                <div class="col-12 text-center poEr">
+                <input id="user"type="email" placeholder="Nome de Usuário" data-required>
+                </div>
+                <div class="col-12 poEr">
+                <input type="password" placeholder="Senha" data-required data-verify-password>
+                </div>
+            </form>
             </div>
         </section>
+        <p class="error"></p>
         <section class="row">
             <div class="entrar col-12">
-                <button>Entrar</button>
+              <button id="login" type="button" class="btn btn-outline-secondary">Entrar</button>
             </div>
         </section>
         <section class="row">
             <div class="ajuda col-12">
-                <p>Esqueceu seus dados de login? <a href="#">Obtenha ajuda para entrar</a></p>
+                <p>Esqueceu seus dados de login? <a href="#">Obtenha ajuda para entrar.</a></p>
             </div>
         </section>
     </main>
     <footer class="footer">
         <section class="cadastro row">
             <div class="col-12">
-                <p>Não tem conta? <a href="#">Cadastre-se</a> </p>
+                <p>Não tem conta? <a href="../Cadastre-se/cadastre-se.html">Cadastre-se.</a> </p>
             </div>
         </section>
     </footer>
-
-
-
-
-
-
-
-
+    <script src="./script.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>

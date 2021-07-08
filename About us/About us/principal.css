@@ -1,0 +1,64 @@
+body {
+ background: linear-gradient(91.56deg, #E38129 2.09%, #EC1E4D 50.9%, #B10598 98.71%), #E38129; 
+}
+.row {
+    margin: 0 !important;
+    background: white;
+}
+#header {
+    border-radius: 10px 10px 0px 0px;
+}
+header {
+    margin-top: 50px;
+    border-radius: 5px;
+   top: 10px;
+}
+.centro {
+    display: flex;
+    justify-content: center;
+}
+.mainbutton {
+    min-width: 300px !important; 
+}
+.beer {
+    margin-bottom: 400px;
+}
+
+.login {
+    margin-top: 10px;
+    margin-left: 55px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+.butao{
+    max-width: 300px;
+    border-radius: 10px;
+    color: black;
+    font-size: 20px;
+    border: none;
+    background: linear-gradient(168.51deg, #B10598 2.1%, #D01E4A 47.66%, #FF7800 98.81%), #DF6C07;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+.sobre {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+.titulo {
+    margin-top: 10px;
+}
+/* carousel */
+.carousel-item img{
+    width: 100% !important;
+    height: 700px;
+}

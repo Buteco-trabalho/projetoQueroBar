@@ -1,0 +1,71 @@
+.row{
+    margin: 0px !important;
+}
+body{
+    background: linear-gradient(168.51deg, #B10598 2.1%, #D01E4A 47.66%, #FF7800 98.81%);
+    margin-top: 70px !important;
+    font-family: Voltaire;
+    height: 100vh;
+}
+.logo{
+    text-align: center;
+    margin-left: 10px;
+}
+.login{
+    text-align: center;
+}
+.login input{
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.45));
+    border: none;
+    height: 38.16px;
+
+}
+.entrar{
+    text-align: center;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+.entrar button{
+    width: 300px;
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.45));
+    color: #ffff;
+    margin-right: 20px;
+}
+.ajuda{
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 15px;
+}
+.cadastro{
+    text-align: center;
+}
+footer {
+    display: flex;
+    position: fixed;
+    bottom: -40px;
+    background-color: #C4C4C44D;
+    border-top: solid 2px #C4C4C44D;
+    width: 100%;
+    margin-bottom: 0px !important;
+    padding-bottom: 40px;
+}
+footer p {
+    margin-top: 10px;
+}
+section{
+    max-width: 100%;
+}
+.error{
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}

@@ -1,0 +1,138 @@
+body {
+    background: linear-gradient(168.51deg, #B10598 2.1%, #D01E4A 47.66%, #FF7800 98.81%), #DF6C07;
+}
+.row {
+    margin: 0 !important;
+}
+.cabecalho{
+    text-align: center;
+}
+.head{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding: 10px;
+    background-color: #FF8921;
+}
+
+.titulo{
+    font-size: 25px;
+    text-align: center;
+}
+.opcao{
+    margin-top: 30px;
+    padding: 10px;
+}
+.bi-globe2{
+    margin-top: 4px;
+}
+.fundo{
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 15px;
+    height: 548px;
+}
+.icone{
+    display: inline-block;
+    padding: 2px;
+    padding-top: 2px;
+}
+.texto{
+    text-align: center;
+    font-size: 30px;
+    padding-right: 50px;
+}
+.linha{
+    color: black;
+    cursor: pointer;
+    border-left: solid 5px black;
+    border-bottom: 1px solid rgb(73, 73, 73);
+    padding: 20px;
+}
+.linha:hover {
+    box-shadow: -5px 0px 0px #000000;
+}
+
+.butao{
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid black !important;
+    width: 75%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.posicao{
+    text-align: center;
+}
+.switch {
+    position: absolute;
+    display: inline-block;
+    width: 60px;
+    height: 26px;
+    top: 15px;
+    right: 0px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  } 
+  .seta{
+    float: left;
+    color: black;
+}
+  .seta :hover{
+    cursor: pointer;
+}
+img {
+  width: 130px;
+}

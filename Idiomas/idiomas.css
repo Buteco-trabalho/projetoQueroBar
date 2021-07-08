@@ -1,0 +1,56 @@
+header{
+    width: 100%;
+    height: 130px;   
+    text-align: center;
+    background: linear-gradient(168.51deg, #B10598 2.1%, #D01E4A 47.66%, #FF7800 98.81%), #DF6C07;
+}
+.logo img{
+    width: 130px;
+}
+.row{
+    margin: 0 !important;
+}
+.barra_nav{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: #FF8921;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    color: black;
+    text-decoration: none;
+}
+.titulo{
+    font-size: 25px;
+    text-align: center;
+}
+.seta{
+    float: left;
+}
+.seta :hover{
+    cursor: pointer;
+}
+.idiomas{
+    text-align: center;
+    margin-top: 12%;
+    align-items: center;
+    justify-content: center;
+}
+.idioma{
+    margin-top: 40px;
+    border: solid;
+    border-radius: 15px;
+    border-width: 2px;
+    width: 60%;
+}
+.idioma:hover{
+    background-color: rgba(0, 0, 0, 0.185);
+}
+.idioma img{
+    width: 60px;
+    display: inline;
+}
+
+

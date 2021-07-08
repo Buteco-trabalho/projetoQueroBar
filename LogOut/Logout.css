@@ -1,0 +1,78 @@
+body {
+    font-size: 22px;
+    font-family: "Voltaire", "Sans-serif";
+}
+.row {
+    margin: 0px !important;
+}
+header img {
+    width: 150px !important;
+    margin-top: 10px;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+}
+header {
+    position: fixed;
+    top: 0px;
+    background: white;
+    width: 100%;
+}
+.Headers-buttons {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    justify-content: end;
+}
+.navbar div button {
+    border: none;
+    text-align: center;
+    height: 40px;
+    width: 50%;
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.39));
+    margin: 5px;
+}
+#cad {
+    background: linear-gradient(91.56deg, #E38129 2.09%, #EC1E4D 50.9%, #B10598 98.71%), #E38129;
+    color: white;
+}
+#cad:hover {
+    background: linear-gradient(91.56deg, #ad5c15 2.09%, #b30c33 50.9%, #811271 98.71%), #a15512;
+    filter: none;
+}
+#login:hover {
+    background: rgb(207, 207, 207);
+    filter: none;
+}
+.title, .GitHub {
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.title {
+    margin-top: 250px;
+}
+.GitHub-Container{
+    background: linear-gradient(91.56deg, #E38129 2.09%, #EC1E4D 50.9%, #B10598 98.71%), #E38129;
+    margin-top: 50px;
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+}
+.Agradecimentos {
+    margin-top: 20px;
+}
+.pucminas {
+    float: right;
+}
+.caram {
+    float: left;
+}
+.Turma {
+    margin-top: 10px;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="perfil2.css">
+    <title>Buteco Virtual - Perfil</title>
+</head>
+
+<body>
+    <header>
+        <div class="darkMode">
+            <img id="logo" src="./img/LOGO BUTECO.png" alt="">
+        </div>
+        <div class="navTop darkMode">
+            <h1><label id="seta"><a href="../Pagina Principal/index.html"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+              </svg></a></label>
+            Perfil</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container perfil darkMode">
+            <div class="divImg">
+                <img class="perfilImg" id="userImg" src="img/silhouette.jpg" onclick="document.getElementById('arquivo').click();">
+                <input type="file" id="arquivo">
+            </div>
+            <div class="SectionUser">
+                <h2 id="userName">Nome</h2>
+            </div>
+            <div class="SectionUser">
+                <h3>Bio:</h3>
+                <form id="bio">
+                    <textarea name="bio" id="inputBio">
+
+                    </textarea>
+                    <div>
+                        <button type="submit">Enviar Bio</button>
+                    </div>
+                </form>
+                <div class="Biografia">
+                    <p id="pBio"></p>
+                </div>
+                <div id="Edit">
+                    <button>Editar Bio</button>
+                </div>
+            </div>
+            <div class="barInsignia">
+                <h3>Bares mais frequentados: </h3>
+                <div class="baresImgs">
+                    <img src="../Pagina Principal/logos/bar_do_macaco-removebg-preview.png">
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="./perfil.js"></script>
+    <script src="../config/DarkMode/DarkMode.js"></script>
+
+</body>
+
+</html>
